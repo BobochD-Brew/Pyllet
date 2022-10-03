@@ -54,7 +54,8 @@ def keyToWalletData(Pkey):
     publicAddress = b58encode(hashedPublicKey + checksum)
     return {
         "privateKey": Pkey,
-        "encodedPrivateKey":  b58encode_check(b'\x80' +Pkey+hashlib.sha256(Pkey).digest()[:1]),
+        "encodedPrivateKey":  b58encode_check(b'\x80'+Pkey+b'\x01'),
+        "wifUncompressedPrivateKey":  b58encode_check(b'\x80'+Pkey),
         "signingKey":  signingKey,
         "verifyingKey":  verifyingKey,
         "publicKey":  publicKey,
@@ -306,7 +307,7 @@ def subMenu():
         return mainMenu()
     elif option == 6:
         showData("WIF Private key",str(selectedWalletData["encodedPrivateKey"])[1:].replace("'",""))
-        showData("Hex Private key",selectedWalletData["privateKey"][1:].hex())
+        showData("Hex Private key",(selectedWalletData["privateKey"]).hex())
         showData("Extended Private key",walletToExtendedPrivateKey(selectedWalletData))
         if( selectedWalletData["publicKey"] == walletData["masterPublicKey"]):
             showData("BIP39 Seed"," ".join(keyToSeed(walletData["entropy"])))
