@@ -1,21 +1,21 @@
 ```diff
-@@        ___                                                 ___                    @@
-@@       /\  \                                               /\__\                   @@
-@@      /::\  \       ___                                   /:/ _/_         ___      @@
-@@     /:/\:\__\     /|  |                                 /:/ /\__\       /\__\     @@
-@@    /:/ /:/  /    |:|  |    ___     ___   ___     ___   /:/ /:/ _/_     /:/  /     @@
-@@   /:/_/:/  /     |:|  |   /\  \   /\__\ /\  \   /\__\ /:/_/:/ /\__\   /:/__/      @@
-@@   \:\/:/  /    __|:|__|   \:\  \ /:/  / \:\  \ /:/  / \:\/:/ /:/  /  /::\  \      @@
-@@    \::/__/    /::::\  \    \:\  /:/  /   \:\  /:/  /   \::/_/:/  /  /:/\:\  \     @@
-@@     \:\  \    ~~~~\:\  \    \:\/:/  /     \:\/:/  /     \:\/:/  /   \/__\:\  \    @@
-@@      \:\__\        \:\__\    \::/  /       \::/  /       \::/  /         \:\__\   @@
-@@       \/__/         \/__/     \/__/         \/__/         \/__/           \/__/   @@
+@@             ___                                                 ___                         @@
+@@            /\  \                                               /\__\                        @@
+@@           /::\  \       ___                                   /:/ _/_         ___           @@
+@@          /:/\:\__\     /|  |                                 /:/ /\__\       /\__\          @@
+@@         /:/ /:/  /    |:|  |    ___     ___   ___     ___   /:/ /:/ _/_     /:/  /          @@
+@@        /:/_/:/  /     |:|  |   /\  \   /\__\ /\  \   /\__\ /:/_/:/ /\__\   /:/__/           @@
+@@        \:\/:/  /    __|:|__|   \:\  \ /:/  / \:\  \ /:/  / \:\/:/ /:/  /  /::\  \           @@
+@@         \::/__/    /::::\  \    \:\  /:/  /   \:\  /:/  /   \::/_/:/  /  /:/\:\  \          @@
+@@          \:\  \    ~~~~\:\  \    \:\/:/  /     \:\/:/  /     \:\/:/  /   \/__\:\  \         @@
+@@           \:\__\        \:\__\    \::/  /       \::/  /       \::/  /         \:\__\        @@
+@@            \/__/         \/__/     \/__/         \/__/         \/__/           \/__/        @@
 ```
 A simple python bitcoin wallet manager implementing BIP39 & BIP32.
 
 ### EXE packed with PyInstaller
 
-You can download the packed .exe file here [main.exe](dist/main.exe)
+Download the packed .exe file here [main.exe](dist/main.exe)
 
 ### One file python script
 
@@ -26,7 +26,7 @@ foo@bar:~$ python3 -m pip install ecdsa base58 qrcode
 foo@bar:~$ python3 main.py
 ```
 
-A file named ".mySeed1.env" will be created with a new seed you can edit it and enter you BIP39 seed phrase or generate a new one 
+A file named ```.mySeed1.env``` will be created with a new seed, you can edit it and enter you BIP39 seed phrase or generate a new one. 
 
 ### Example
 
@@ -45,45 +45,60 @@ X-------------------------------------------------------------------------------
 |            \/__/         \/__/     \/__/         \/__/         \/__/           \/__/        |
 |                                                                                             |
 X---------------------------------------------------------------------------------------------X
-|-> Loaded seed phrase from {.mySeed1.env}.                                                   |
+| https://github.com/BobochD-Brew/BtcPyllet                                 https://boboch.tk |
+X---------------------------------------------------------------------------------------------X
+|-> Counldn't find a seed file, {.mySeed1.env} has been generated.                            |
 X---------------------------------------------------------------------------------------------X
 | Selected Wallet : MASTER                                                                    |
-| Address : 1KMvrZc5VA683PHBcRdgFDSyKgMDBXMqGN                                                |
+| Address : 1JsbYFtNhxfGjFa2D2xRiUcUqpP1Y64Bpk                                                |
 X---------------------------------------------------------------------------------------------X
 |   1-> Show public keys            2-> Generate new seed          3-> Load seed file         |
 |   4-> Select child                5-> Select master wallet       6-> Show private keys      |
 |   7-> Show master private Key     8-> Show master public Key     9-> Show master chaincode  |
 |  10-> Show addess QR Code                                                                   |
 X---------------------------------------------------------------------------------------------X
-| Compressed Public key : 027592fd32f4c2a10372ce041e4c66185734cd85531e54ea810cb4f2444c857a80  |
-| Signing key : 9b13cb232f414ff27126ff4dc25b7fecf51a4a175be1d4bf7fbc880408bf7758              |
-| Verifying Key : 7592fd32f4c2a10372ce041e4c66185734cd85531e54ea810cb4f2444c857a8081acd5c960f |
-| 22a1564e7972e1bdd3c629772522d053d964cb56128936b8a6e54                                       |
-| Extended Public Key : xpub661MyMwAqRbcGhQeubTB8J4n5vtZBTLo85FWDGqAT8r8HGkwCUTVhM2XUGdLscJZs |
-| k4mJu9reoSSgsMrZpnVrgt8qxjojGzHfBJdKPiqAa6                                                  |
-| Address : 1KMvrZc5VA683PHBcRdgFDSyKgMDBXMqGN                                                |
+| Compressed Public key : 020e9fea1d0c91e4f0602db114dfdb1529426fe97dd2aaadd072e76e643b4be9d7  |
+| Signing key : 21c52bf45e23545baeb0331609a5679145742354737694ad20b1227b29515e31              |
+| Verifying Key : 0e9fea1d0c91e4f0602db114dfdb1529426fe97dd2aaadd072e76e643b4be9d74e5a655e289 |
+| 8f84ea3825a146f97e628729d26ed914789a71214b705ffb8afde                                       |
+| Extended Public Key : xpub661MyMwAqRbcFb5t6KoSZF6tnj9s3FC9PjaCnAJM7gDaRFoap6ioxFqsKEteVEMds |
+| EWyTkCyFNx8JsySdKpUhswkm2MqifUfxxwtXRGv8oa                                                  |
+| Address : 1JsbYFtNhxfGjFa2D2xRiUcUqpP1Y64Bpk                                                |
 X---------------------------------------------------------------------------------------------X
 |   1-> Show public keys            2-> Generate new seed          3-> Load seed file         |
 |   4-> Select child                5-> Select master wallet       6-> Show private keys      |
 |   7-> Show master private Key     8-> Show master public Key     9-> Show master chaincode  |
 |  10-> Show addess QR Code                                                                   |
 X---------------------------------------------------------------------------------------------X
-|                               ▄▄▄▄▄▄▄   ▄ ▄▄▄▄    ▄ ▄▄▄▄▄▄▄                                 |
-|                               █ ▄▄▄ █ ▀ ▀ ▄█▀█▀▀▀ ▄ █ ▄▄▄ █                                 |
-|                               █ ███ █ ▀█▀ ▀ ▀█▄█  ▄ █ ███ █                                 |
-|                               █▄▄▄▄▄█ █▀▄▀█ ▄ ▄ █ ▄ █▄▄▄▄▄█                                 |
-|                               ▄▄▄▄▄ ▄▄▄█▀█  ▀ ▀  ▀▀▄ ▄ ▄ ▄                                  |
-|                               ▄▀▀▄█ ▄ █ █ ▀███ ██ █▄▀ █▀▄ ▀                                 |
-|                               ▀▀▄ ▄▄▄▄ ▄▄ █▀▄ ▀▄ ▀▀ ▀▄ █▄ ▄                                 |
-|                               ▄▀█  ▄▄▄▄  ▄▄  ██▄▀▀▀▄  ▀ ▄▀                                  |
-|                               ▄  ▄█▄▄▀ ▀▀█  ▀▄▀   ▀▀ █▀█ ▄█                                 |
-|                               █▀▀▀▀▄▄█▄▄  ▀████▀▀▀▀█▄▄█ █▀                                  |
-|                               █ ▀▄▀▄▄▀▀▄▀ █▀▄█▄  ▀▄█▄▄█▀▄▄                                  |
-|                               ▄▄▄▄▄▄▄ █▀ ▄▄  ▄█ ▀▀█ ▄ █▄▄▄▀                                 |
-|                               █ ▄▄▄ █ ▄▀▄█  ▀▀▀ ▀▀█▄▄▄█▄▄█▀                                 |
-|                               █ ███ █ █▄  ▀███▀▄█▀▀▄ ▄██ █▀                                 |
-|                               █▄▄▄▄▄█ █▄  █▀▄▀▄ ▀▄▀█▄▄▄█ ▀                                  |
+|                               ▄▄▄▄▄▄▄   ▄ ▄▄▄▄  ▄▄▄ ▄▄▄▄▄▄▄                                 |
+|                               █ ▄▄▄ █ ▀ ▀ ▄█▀█▀▀▀ █ █ ▄▄▄ █                                 |
+|                               █ ███ █ ▀█▀ ▀ ▀█▄   █ █ ███ █                                 |
+|                               █▄▄▄▄▄█ █▀▄▀█ ▄ ▄ ▄ █ █▄▄▄▄▄█                                 |
+|                               ▄▄▄▄▄ ▄▄▄█▀█  ▀ ▀▄ ▄ ▄ ▄ ▄ ▄                                  |
+|                               ▀▀▀▀██▄█▀ █ ▀███▄ ▄▀▀███▀ ▄▀▀                                 |
+|                               ▄▄▀▄▄ ▄▄ ▄▄ █▀▄  ▄ ▀▄▀▀▀██ ▄▀                                 |
+|                               ▀█▀▀▀▀▄█▀▀ ▄▄  ▄▀ ▄ ▀▀ ▀▀▄▀ ▀                                 |
+|                               ▄█ ▄▀▀▄  ▄ █  ▀█▄ ▀▄▄▀▀▀▀▀ ██                                 |
+|                               █▀▄▄ ▀▄ ▄▄  ▀██▄▀ ▄▀▀█▀▀█▀▄▀                                  |
+|                               █ ▄ █▄▄ █ █ █▀▄▄ ▄█▀▄▄▄▄▄█▄▄                                  |
+|                               ▄▄▄▄▄▄▄ █▄ ▄▄  █▀ ▄██ ▄ █▀ ▄▀                                 |
+|                               █ ▄▄▄ █ ▄▀██  ▀██   █▄▄▄█▀ █▀                                 |
+|                               █ ███ █ ██  ▀██▄ ▀▄▄ ▀▄█▄▀██▀                                 |
+|                               █▄▄▄▄▄█ █▄▀ █▀▄▄█▄▄▄ █▄ ▀▀▄▀                                  |
 |                                                                                             |
+X---------------------------------------------------------------------------------------------X
+|   1-> Show public keys            2-> Generate new seed          3-> Load seed file         |
+|   4-> Select child                5-> Select master wallet       6-> Show private keys      |
+|   7-> Show master private Key     8-> Show master public Key     9-> Show master chaincode  |
+|  10-> Show addess QR Code                                                                   |
+X---------------------------------------------------------------------------------------------X
+| WIF Private key : KxMMaxz97MQt8cLiiS3C9p6i1dayfR3dAQeJA9PBGjvkvbp8sBCT                      |
+| Hex Private key : 21c52bf45e23545baeb0331609a5679145742354737694ad20b1227b29515e31          |
+| Extended Private key : xprv9s21ZrQH143K371QzJGSC7AAEhKNdnUJ2WebymtjZLgbYTUSGZQZQTXPTz1K6KUt |
+| PCFmtq5AyG4NGS4uKkEoZS7EgNpfLFTzRDg5qiXbNAt                                                 |
+| BIP39 Seed : october now number holiday suffer unique enable taste race donkey olive chat b |
+| asket school never trend fatigue roast great cluster install family race glance             |
+| Entropy : 9912e65db66d8bdb1256f1b068266893613381a5474053d76198963756a52c1b15                |
 X---------------------------------------------------------------------------------------------X
 |   1-> Show public keys            2-> Generate new seed          3-> Load seed file         |
 |   4-> Select child                5-> Select master wallet       6-> Show private keys      |
@@ -92,45 +107,43 @@ X-------------------------------------------------------------------------------
 X---------------------------------------------------------------------------------------------X
 |-> Enter a BIP32 wallet path. ex: m/0 or m/0'/5h/2 ...                                       |
 X---------------------------------------------------------------------------------------------X
-| Selected Wallet : m/14/1'/5/9'/26'/5358/97                                                  |
-| Address : 1B8JsKs4CfhRgNswbrPjVvC3EntFESCySw                                                |
+| Selected Wallet : m/44'/0'/0'/0                                                             |
+| Address : 19QwAsJ3KUAeFvY6t9FmGht9A8AeVmVzjv                                                |
 X---------------------------------------------------------------------------------------------X
 |   1-> Show public keys            2-> Generate new seed          3-> Load seed file         |
 |   4-> Select child                5-> Select master wallet       6-> Show private keys      |
 |   7-> Show master private Key     8-> Show master public Key     9-> Show master chaincode  |
 |  10-> Show addess QR Code                                                                   |
 X---------------------------------------------------------------------------------------------X
-| WIF Private key : KyrmX1wftXAq8T4ELPUg3h7RrADgLK1fjV9jFjDpDQ3phS2C5eri                      |
-| Hex Private key : bd12840f2caae2f18f81d4032cffdc9dae157c91b26ba5d87ac3265ce5d4db            |
-| Extended Private key : xprvA6KkzCb2bPoUq59Ykvq3JeSKeuEws4WPYkBAdS6Dd5yj971VYsM4rD7WrLhMbhYk |
-| L4sazrW4pw3gGZbp8Z9EHW7zpLqZS6hKUHVaxKLQnxB                                                 |
+|-> Enter a BIP32 wallet path. ex: m/0 or m/0'/5h/2 ...                                       |
+X---------------------------------------------------------------------------------------------X
+| Selected Wallet : m/555'/0/0/0/0/0/0                                                        |
+| Address : 1MNJhPWQj7uzJsZwUzrUKijTowZ3TJidt                                                 |
 X---------------------------------------------------------------------------------------------X
 |   1-> Show public keys            2-> Generate new seed          3-> Load seed file         |
 |   4-> Select child                5-> Select master wallet       6-> Show private keys      |
 |   7-> Show master private Key     8-> Show master public Key     9-> Show master chaincode  |
 |  10-> Show addess QR Code                                                                   |
 X---------------------------------------------------------------------------------------------X
-| Master Chain Code : d86cbc21977eade2dd72950949d7141a8f9aac389d59c7186173ee283c53cf03        |
+| Master Private Key : 21c52bf45e23545baeb0331609a5679145742354737694ad20b1227b29515e31       |
 X---------------------------------------------------------------------------------------------X
 |   1-> Show public keys            2-> Generate new seed          3-> Load seed file         |
 |   4-> Select child                5-> Select master wallet       6-> Show private keys      |
 |   7-> Show master private Key     8-> Show master public Key     9-> Show master chaincode  |
 |  10-> Show addess QR Code                                                                   |
 X---------------------------------------------------------------------------------------------X
-| Master Public Key : 027592fd32f4c2a10372ce041e4c66185734cd85531e54ea810cb4f2444c857a80      |
+| Master Public Key : 020e9fea1d0c91e4f0602db114dfdb1529426fe97dd2aaadd072e76e643b4be9d7      |
 X---------------------------------------------------------------------------------------------X
 |   1-> Show public keys            2-> Generate new seed          3-> Load seed file         |
 |   4-> Select child                5-> Select master wallet       6-> Show private keys      |
 |   7-> Show master private Key     8-> Show master public Key     9-> Show master chaincode  |
 |  10-> Show addess QR Code                                                                   |
 X---------------------------------------------------------------------------------------------X
-| Selected Wallet : MASTER                                                                    |
-| Address : 1KMvrZc5VA683PHBcRdgFDSyKgMDBXMqGN                                                |
+| Master Chain Code : 6908371f914416a4cccc8003faf79a97e03828f7043acc6ff7eca6ce36b9d108        |
 X---------------------------------------------------------------------------------------------X
 |   1-> Show public keys            2-> Generate new seed          3-> Load seed file         |
 |   4-> Select child                5-> Select master wallet       6-> Show private keys      |
 |   7-> Show master private Key     8-> Show master public Key     9-> Show master chaincode  |
 |  10-> Show addess QR Code                                                                   |
 X---------------------------------------------------------------------------------------------X
-|-> Select action:
 ```
